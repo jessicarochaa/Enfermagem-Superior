@@ -1,0 +1,583 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search");
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    .container_imagem {
+        width: 50vw;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --shadow-black: #101923;
+    --blue-cian: #232F3E;
+    --white: #FFFFFF;
+    --red: #f11d3d;
+    --purple: #78799a;
+    --black: #000000;
+    --cinza: #d9d9d9;
+    --green: #059862;
+    --cin: #edf2ff;
+    --shaw: #3b4856;
+    --back: #2c2c2c;
+}
+
+.background-header{
+    background: var(--shadow-black);
+}
+
+/*classe reutilizavéis*/
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/*classes do site*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul li{
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: var(--green);
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px var(--black);
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: var(--black);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a{
+    color: white;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: var(--cinza);
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+}
+
+#searchInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+
+.search label{
+    height: 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    background-color: var(--white);
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+}
+
+/*main*/
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.click-text{
+    width: 70%;
+    color: var(--white);
+    text-align: center;
+}
+
+.click-text h1{
+    font-size: 1.5rem;
+}
+
+.btn-click{
+    width: 30%;
+}
+
+.btn-gradiente{
+    padding: 20px 100px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 15px;
+}
+
+/*click*/
+.click{
+    background: var(--blue-cian);
+}
+
+section,
+footer{
+    padding: 2.7rem;
+}
+
+/*section diferenciais1*/
+.difernciais1 .container{    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.difernciais1 .card{
+    width: 20%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.difernciais1 .card:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.difernciais1 .card img{
+    width: 200px;
+}
+
+.difernciais1 .card{
+    margin: 13px 0;
+}
+
+.difernciais1 .container .card{
+    text-align: center;
+}
+
+/*section diferenciais2*/
+.difernciais2 .container{    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.difernciais2 .container .card{
+    text-align: center;
+}
+
+.difernciais2 .card{
+    width: 20%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.difernciais2 .card:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.difernciais2 .card img{
+    width: 200px;
+}
+
+.difernciais2 .card{
+    margin: 13px 0;
+}
+
+.difernciais2 .center-img{
+    text-align: center;
+    width: 40%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+.diferenciais1{
+    background: var(--white);
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--blue-cian);
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+/*-----------------------*/
+/*INTUBAÇÃO OROTRAQUEAL*/
+.intuba1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.intuba1 .oro .img-int{
+    text-align: center;
+}
+
+.intuba1 .oro{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.intuba1 .oro:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.intuba1 .oro img{
+    width: 200px;
+}
+
+.intuba1 .oro{
+    margin: 13px 0;
+}
+
+.intuba1 .container .oro{
+    text-align: justify;
+}
+
+.intuba1 .oro .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*INTUBAÇÃO NASOTRAQUEAL*/
+.masc1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.masc1 .neso .img-int{
+    text-align: center;
+}
+
+.masc1 .neso{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.masc1 .neso:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.masc1 .neso img{
+    width: 200px;
+}
+
+.masc1 .neso{
+    margin: 13px 0;
+}
+
+.masc1 .container .neso{
+    text-align: justify;
+}
+
+.masc1 .neso .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*INTUBAÇÃO NASOTRAQUEAL*/
+.sonda1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.sonda1 .endo .img-int{
+    text-align: center;
+}
+
+.sonda1 .endo{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.sonda1 .endo:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.sonda1 .endo img{
+    width: 200px;
+}
+
+.sonda1 .endo{
+    margin: 13px 0;
+}
+
+.sonda1 .container .endo{
+    text-align: justify;
+}
+
+.sonda1 .endo .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*INTUBAÇÃO BOUGIE*/
+.bougi1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.bougi1 .bougie .img-int{
+    text-align: center;
+}
+
+.bougi1 .bougie{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.bougi1 .bougie:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.bougi1 .bougie img{
+    width: 200px;
+}
+
+.bougi1 .bougie{
+    margin: 13px 0;
+}
+
+.bougi1 .container .bougie{
+    text-align: justify;
+}
+
+.bougi1 .bougie .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*PRONAR PACIENTE*/
+.pro1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.pro1 .pac .img-int{
+    text-align: center;
+}
+
+.pro1 .pac{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.pro1 .pac:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.pro1 .pac img{
+    width: 200px;
+}
+
+.pro1 .pac{
+    margin: 13px 0;
+}
+
+.pro1 .container .pac{
+    text-align: justify;
+}
+
+.pro1 .pac .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*NAVEGUE*/
+.nave1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.nave1 .gue .title2{
+    text-align: center;
+    font-size: larger;
+    font-family: "Titan One", serif;
+}
+
+.nave1 .gue{
+    width: 50%;
+    cursor: pointer;
+    padding: 76px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.nave1 .gue:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.nave1 .gue{
+    margin: 13px 0;
+}
+
+.nave1 .container .gue{
+    text-align: justify;
+}
+
+.nave1 .gue .atencao{
+    color: var(--red);
+    text-align: center;
+}
+
+/*-----------------------*/
+/*MATERIAIS*/
+.mat1 .container{    
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.mat1 .te .title2{
+    text-align: center;
+    font-size: larger;
+}
+
+.mat1 .te{
+    width: 50%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.mat1 .te:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.mat1 .te{
+    margin: 13px 0;
+}
+
+.mat1 .container .te{
+    text-align: justify;
+}
+
+/*-----------------------*/
+/*REFERENCIAS*/
+.refe1 .container{    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.refe1 .card{
+    width: 20%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+.refe1 .card:hover{
+    box-shadow: 0px 10px 67px 8px;
+}
+
+.refe1 .card img{
+    width: 200px;
+}
+
+.refe1 .card{
+    margin: 13px 0;
+}
+
+.refe1 .container .card{
+    text-align: center;
+}
